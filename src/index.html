@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="form-container">
+      <form id="image-form">
+        <div class="input-group">
+          <label for="img-name">Название</label>
+          <input type="text" id="img-name" required>
+        </div>
+        <div class="input-group">
+          <label for="img-url">Ссылка на изображение</label>
+          <input type="url" id="img-url" required>
+          <div id="url-error" class="error hidden">Неверный URL изображения</div>
+        </div>
+        <button type="submit" class="submit-btn">Добавить</button>
+      </form>
+    </div>
+
+    <div id="gallery-container" class="gallery">
+    </div>
+  </div>
+</body>
+
+</html>
